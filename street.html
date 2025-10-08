@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>sunabeda.com - Street Light AI</title>
+  <link rel="stylesheet" href="street.css">
+</head>
+<body>
+    <div class="background-image"></div>
+    <div class="navbar">
+  <div class="navbar-logo">
+    <span>sunabeda.com</span>
+  </div>
+  <ul class="navbar-links">
+    <li><a href="#">Home</a></li>
+    <li><a href="#">About Us</a></li>
+    <li><a href="#">Contact Us</a></li>
+    <li><a href="#">Helpline</a></li>
+  </ul>
+</div>
+  <div class="header">
+    <p>Ensuring safety, efficiency, and sustainability for our community</p>
+  </div>
+  <div class="container">
+    <h2>Upload Street Light Data</h2>
+
+    <div class="images-row">
+        <img src="https://images.pexels.com/photos/32777393/pexels-photo-32777393.jpeg" width="400" height="300">
+        <img src="https://images.pexels.com/photos/3825581/pexels-photo-3825581.jpeg" alt="Maintenance Crew" width="400" height="300">
+        <img src="https://images.pexels.com/photos/1108101/pexels-photo-1108101.jpeg" alt="Smart City" width="400" height="300">
+    </div>
+
+    <div class="upload-section">
+      <input type="file" id="csvFile" />
+      <button onclick="sendData()">Predict</button>
+      <div id="results"></div>
+    </div>
+
+    <div class="maintenance-info">
+      <h2>Maintenance Required in Smart Townships</h2>
+      <div class="maintenance-cards">
+        <div class="maintenance-card card1">
+          <strong>Regular Inspection</strong>
+          <p>Scheduled checks for lamp functionality and sensor calibration.</p>
+        </div>
+        <div class="maintenance-card card2">
+          <strong>Cleaning</strong>
+          <p>Removal of dust and debris from solar panels and light covers to ensure maximum efficiency.</p>
+        </div>
+        <div class="maintenance-card card3">
+          <strong>Software Updates</strong>
+          <p>Keeping control systems and IoT devices up-to-date for optimal performance.</p>
+        </div>
+        <div class="maintenance-card card4">
+          <strong>Component Replacement</strong>
+          <p>Timely replacement of faulty bulbs, sensors, or batteries.</p>
+        </div>
+        <div class="maintenance-card card5">
+          <strong>Emergency Repairs</strong>
+          <p>Rapid response to outages or malfunctions to maintain safety.</p>
+        </div>
+      </div>
+      <p>
+        Proactive maintenance ensures energy savings, reduces downtime, and keeps our township safe and well-lit.
+      </p>
+    </div>
+  </div>
+    </div>
+    <!-- Add this form where you want the report section to appear -->
+<div class="report-issue-card">
+  <h2>Report Community Issues</h2>
+  <h3>Fill the form details in minutes</h3>
+  <p class="subtitle">Help us maintain our township by reporting any issues you encounter</p>
+  <form>
+    <label for="issueType" class="form-label">Issue Type</label>
+    <select id="issueType" class="form-input" required>
+      <option value="">Select issue type</option>
+      <option value="streetlight">Streetlight Problem</option>
+      <option value="road">Road Damage</option>
+      <option value="garbage">Garbage</option>
+      <option value="water">Water Supply</option>
+      <option value="other">Other</option>
+      </select>
+      <label for="priority" class="form-label">Priority</label>
+      <select id="priority" class="form-input" required>
+        <option value="">Select priority</option>
+        <option value="high">High</option>
+        <option value="medium">Medium</option>
+        <option value="low">Low</option>
+      </select>
+      
+      <label for="location" class="form-label">Location (Block/Zone)</label>
+      <input type="text" id="location" class="form-input" placeholder="Enter location" required />
+      
+      <label for="description" class="form-label">Detailed Description</label>
+    <textarea id="description" class="form-input" rows="4" placeholder="Please describe the issue in detail..." required></textarea>
+
+    <label for="photo" class="form-label">Upload Photo (Optional)</label>
+    <input type="file" id="photo" class="form-input" accept="image/*" />
+
+    <button type="submit" class="report-btn">Submit Report</button>
+  </form>
+</div>
+<div id="predictiveSection" style="display:none;">
+  <div class="predictive-maintenance-card">
+    <h2>Street Light Predictive Maintenance</h2>
+    <p class="subtitle">AI-powered monitoring for optimal street light performance</p>
+    <div class="prediction-system">
+      <h3>Fault Prediction System</h3>
+      <form id="faultForm">
+        <div class="input-row">
+          <div>
+            <label for="temp">Temperature (°C)</label>
+            <input type="number" id="temp" name="temp" required>
+          </div>
+          <div>
+            <label for="vibration">Vibration (Hz)</label>
+            <input type="number" id="vibration" name="vibration" required>
+          </div>
+          <div>
+            <label for="usage">Usage Hours</label>
+            <input type="number" id="usage" name="usage" required>
+          </div>
+        </div>
+        <button type="submit" class="predict-btn">Predict Fault</button>
+      </form>
+      <div class="prediction-result" id="predictionResult">
+        <strong>Prediction Result:</strong>
+        <div>Enter parameters to get prediction</div>
+      </div>
+    </div>
+  </div>
+</div>
+  <footer class="footer">
+  &copy; 2025 sunabeda.com. All rights reserved.
+<div class="footer-links">
+    <a href="#">Privacy Policy</a> |
+    <a href="#">Terms of Service</a> |
+    <a href="#">Contact Us</a>
+</div>
+<div class="footer-contact">
+    Helpline: <a href="tel:+911234567890" style="color:#fff;text-decoration:underline;">+91-12345-67890</a> &nbsp;|&nbsp;
+    Email: <a href="mailto:support@sunabeda.com" style="color:#fff;text-decoration:underline;">support@sunabeda.com</a>
+</div>
+  </footer>
+  <script src="street.js"></script>
+</body>
+</html>

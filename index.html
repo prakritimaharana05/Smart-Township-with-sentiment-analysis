@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Smart Township HAL - Login</title>
+  <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@500&family=Titillium+Web:wght@300;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body class="login-page">
+  <nav class="navbar">
+    <span class="navbar-brand">SMART TOWNSHIP</span>
+  </nav>
+  <div class="main-center">
+    <div class="container login-container">
+    <h1>Welcome to Smart Township</h1>
+    <form onsubmit="event.preventDefault(); window.location.href='admin-login.html';">
+    <img src="https://sdscraneservices.in/wp-content/uploads/sites/7/2021/08/unnamed.jpg" alt="Hindustan aeronautics limited logo" style="width: 300px; height: auto; margin-bottom: 1rem; border-radius: 10px;">
+    <div style="margin:1.5rem 0 0.5rem 0; color:#aaa; font-size:1rem;">Login as an admin?</div>
+    <button 
+  class="admin-link" 
+  style="width:100%; background:var(--color-accent); color:var(--color-text-main); border-radius:25px; padding:0.75rem; font-weight:bold; margin:0;"
+  onclick="window.location.href='admin-login.html';"
+  >
+  Admin login
+</button>
+  </div>
+  <script src="https://cdn.jsdelivr.net/npm/particles.js"></script>
+  <script src="main.js"></script>
+</body>
+</html>

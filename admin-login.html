@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Admin Login - Smart Township HAL</title>
+  <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@500&family=Titillium+Web:wght@300;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body class="login-page">
+  <nav class="navbar">
+    <span class="navbar-brand">SMART TOWNSHIP</span>
+  </nav>
+  <div class="main-center">
+    <div class="container login-container">
+      <h1>Admin Login</h1>
+      <form onsubmit= "event.preventDefault(); window.location.href='dashboard.html'; return false;">
+        <label style="display:block; text-align:left; margin-bottom:0.25rem; color:var(--color-accent-bright); font-weight:500;">Admin Username</label>
+        <input type="text" placeholder="" required />
+        <label style="display:block; text-align:left; margin-bottom:0.25rem; color:var(--color-accent-bright); font-weight:500;">Password</label>
+        <input type="password" placeholder="" required />
+        <button type="submit">Login</button>
+      </form>
+    </div>
+  </div>
+</body>
+</html>
